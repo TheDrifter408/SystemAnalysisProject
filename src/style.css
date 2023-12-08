@@ -223,9 +223,7 @@ button:hover {
 }
 /*Table Styles*/
 .table-container {
-  margin-top: 0.5rem;
   margin-inline:auto;
-  margin-bottom: 1rem;
   background-color: var(--clr-white);
   padding: 1rem;
   border-radius: 1rem;
