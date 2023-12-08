@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./src/svg/favcon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Mediconnect Connect</title>
+  </head>
+  <body id="root">
+    <aside id="leftMenu" class="leftSideMenu">
+      <div class="close-btn-container">
+        <button id="leftMenuCloseBtn">
+          <img src="./src/svg/menu-close.svg" alt="">
+        </button>
+      </div>
+      <div class="icon-container">
+        <img src="./src/svg/medical-Symbol.svg" alt="medicare">
+        <p>Medicare Ltd</p>
+      </div>
+      <div class="profile-container">
+        <div class="icon-container">
+          <img src="./src/assets/profile-svg.svg" alt="">
+        </div>
+        <div>
+          <h3>Welcome</h3>
+          <h4>Dr. House</h4>
+        </div>
+      </div>
+      <div class="nav-container">
+        <ul>
+          <li>
+            <img src="./src/svg/report.svg" alt="reports" class="icon">
+            <a href="">Reports</a>
+          </li>
+          <li>
+            <img src="./src/svg/payments.svg" alt="payments" class="icon">
+            <a href="">Payments</a>
+          </li>
+          <li>
+            <img src="./src/svg/call-nurse.svg" alt="call-nurse" class="icon">
+            <a href="">Call Nurse</a>
+          </li>
+          <li>
+            <img  src="./src/svg/doctors.svg" alt="doctors" class="icon">
+            <a href="">Doctors</a>
+          </li>
+          <li>
+            <img src="./src/svg/patient.svg" alt="patient" class="icon">
+            <a href="">Patients</a>
+          </li>
+          <li>
+            <img src="./src/svg/appointment.svg" alt="appointments" class="icon">
+            <a href="">Appointments</a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <aside id="rightMenu" class="rightSideMenu">
+      <div class="close-btn-container">
+        <button id="rightMenuCloseBtn">
+          <img src="./src/svg/menu-close.svg" alt="">
+        </button>
+      </div>
+      <div class="nav-container">
+        <ul>
+          <li>
+            <img src="./src/svg/location.svg" alt="payments" class="icon">
+            <a href="">Location Permission</a>
+          </li>
+          <li>
+            <img src="./src/svg/account-info.svg" alt="call-nurse" class="icon">
+            <a href="">Account Information</a>
+          </li>
+          <li>
+            <img src="./src/svg/email.svg" alt="patient" class="icon">
+            <a href="">Email Redirect</a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <header>
+      <div class="btn-container">
+        <button id="menuOpenBtn">
+          <img src="./src/svg/menu.svg" alt="">
+        </button>
+      </div>
+      <div class="links-container">
+        <form class="form" action="">
+          <input type="text" placeholder="Search...">
+        </form>
+      </div>
+      <div class="btn-container">
+          <button>
+            <img src="./src/svg/notification.svg" alt="">
+          </button>
+          <button id="settingBtn">
+            <img src="./src/svg/settings.svg" alt="">
+          </button>
+      </div>
+    </header>
+      <section class="container">
+        <div class="notices-container">
+          <div class="card">
+            <div class="notices">
+              <h1>New Patients</h1>
+            </div>
+            <div class="notices-image-container">
+              <img src="./src/svg/new-patients.svg" alt="">
+              <p class="notices-number">35</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="notices">
+              <h1>Today's Operations</h1>
+            </div>
+            <div class="notices-image-container">
+              <img src="./src/svg/operations.svg" alt="">
+              <p class="notices-number">9</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="notices">
+              <h1>Today's Earnings</h1>
+            </div>
+            <div class="notices-image-container">
+              <img src="./src/svg/earnings.svg" alt="">
+              <p class="notices-number">Tk. 1300</p>
+            </div>
+          </div>
+        </div>
+        <div class="table-container">
+          <h1 class="container-title">
+            Patient List
+          </h1>
+          <table>
+            <thead>
+              <tr>
+                <th>Serial No.</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Diseases</th>
+              </tr>
+            </thead>
+            <tbody id="tbody">
+             <tr>
+              <td>1</td>
+              <td>Riaz</td>
+              <td>Ahmed</td>
+              <td>
+                <span class="diseases">Heartburn</span>
+              </td>
+             </tr>
+             <tr>
+              <td>2</td>
+              <td>Nafis</td>
+              <td>Forkan</td>
+              <td>
+                <span class="diseases">Joint pain</span>
+              </td>
+             </tr>
+             <tr>
+              <td>3</td>
+              <td>Rafid</td>
+              <td>Chowdhury</td>
+              <td>
+                <span class="diseases">Lung Cancer</span>
+              </td>
+             </tr>
+             <tr>
+              <td>4</td>
+              <td>Mahfuzul</td>
+              <td>Islam</td>
+              <td>
+                <span class="diseases">Heart Disease</span>
+              </td>
+             </tr>
+             <tr>
+              <td>5</td>
+              <td>Minhaj</td>
+              <td>Chowdhury</td>
+              <td>
+                <span class="diseases">Joint Pain</span>
+              </td>
+             </tr>
+             <tr>
+              <td>6</td>
+              <td>Emdadur</td>
+              <td>Ahbab</td>
+              <td>
+                <span class="diseases">Colon Cancer</span>
+              </td>
+             </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="payments-container">
+          <h1>Payments</h1>
+          <ul class="progress-list">
+            <li>
+              <span>A.Prantik</span>
+              <span class="colorbox">Paid</span>
+            </li>
+            <li>
+              <span>M.Tahmid</span>
+              <span class="colorbox">Not Paid</span>
+            </li>
+            <li>
+              <span>A.Rahman</span>
+              <span class="colorbox">Paid</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="progress-container">
+        <h1>Patients Progress</h1>
+        <div class="cards-container">
+          <div class="card-container">
+            <div class="card">
+              <h1>Patient Progress</h1>
+              <ul class="progress-list">
+                <li>
+                  <span class="progress-name">A.Prantik</span>
+                  <span class="colorbox">21%</span>
+                </li>
+                <li>
+                  <span class="progress-name">M.Tahmid</span>
+                  <span class="colorbox">45%</span>
+                </li>
+                <li>
+                  <span class="progress-name">A.Rahman</span>
+                  <span class="colorbox">56%</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h1>Patient Reports</h1>
+              <ul class="progress-list">
+                <li>
+                  <span class="progress-name">M.Islam</span>
+                  <span>
+                    <span>Charts</span>
+                    <img class="icon" src="./src/svg/charts.svg" alt="">
+                  </span>
+                </li>
+                <li>
+                  <span class="progress-name">E.Ahmed</span>
+                  <span>
+                    <span>Charts</span>
+                    <img class="icon" src="./src/svg/charts.svg" alt="">
+                  </span>
+                </li>
+                <li>
+                  <span class="progress-name">N.Islam</span>
+                  <span>
+                    <span>Charts</span>
+                    <img class="icon" src="./src/svg/charts.svg" alt="">
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
