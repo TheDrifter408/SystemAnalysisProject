@@ -178,6 +178,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  margin-bottom: 1rem;
 }
 .notices-container .card {
   background-color: var(--clr-columbia-blue);
