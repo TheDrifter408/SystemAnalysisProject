@@ -6,22 +6,22 @@ const rightMenuCloseBtn = document.getElementById("rightMenuCloseBtn");
 //grab the aside elements 
 const leftMenu = document.getElementById("leftMenu"); 
 const rightMenu = document.getElementById("rightMenu");
-//Add the class to slide the menu in
+//Add the class to slide the left menu in
 menuOpenBtn?.addEventListener("click",(e)=>{
   e.preventDefault();
   leftMenu?.classList.toggle('leftSideMenuSlideIn');
 })
-//add event to slide the menu away
+//add event to slide the left menu away
 menuCloseBtn?.addEventListener('click',(e) => {
   e.preventDefault();
   leftMenu?.classList.toggle('leftSideMenuSlideIn');
 })
-//add the class to slide the setting menu
+//add the class to slide the settings menu in
 settingBtn?.addEventListener('click',(e) => {
   e.preventDefault();
   rightMenu?.classList.toggle('rightSideMenuSlideIn')
 })
-//add event to settings Menu
+//add the class to slide the settings menu away
 rightMenuCloseBtn?.addEventListener('click',(e) => {
   e.preventDefault();
   rightMenu?.classList.toggle('rightSideMenuSlideIn')

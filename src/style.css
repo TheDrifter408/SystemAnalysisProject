@@ -137,14 +137,16 @@ button:hover {
   border-radius: 0.4rem;
 }
 .profile-container {
-  padding: 1rem 1.5rem;
+  padding: 0.5rem 1.5rem;
+  margin-top: 0;
+  margin-bottom:0;
   display: flex;
   justify-content: center;
   margin-inline:auto;
   align-items: center;
 }
 .icon-container {
-  margin: 1rem 1.2rem;
+  margin: 0.2rem 1.2rem;
   display:grid;
   justify-content: center;
 }
