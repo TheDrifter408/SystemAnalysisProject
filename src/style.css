@@ -45,6 +45,7 @@ p, h1, h2, h3, h4, h5, h6 {
   border-right:none;
   border-bottom: 1px solid black;
   padding: 0.2rem;
+  width: max(50%,10rem);
   color: var(--clr-black);
   background-image: linear-gradient(180deg,var(--clr-columbia-blue),var(--clr-light-blue));
 }
@@ -59,6 +60,7 @@ a:hover {
 header {
   padding: 0.5rem 0.7rem;
   display:flex;
+  width:100%;
   justify-content: space-between;
   align-items: center;
   height:4rem;
@@ -171,8 +173,8 @@ button:hover {
 /*general styles*/
 .notices-container {
   display: flex;
+  flex-wrap: wrap;
   width: min(99%,60rem);
-  height:12vh;
   justify-content: center;
   align-items: center;
   gap: 1rem;
@@ -181,14 +183,20 @@ button:hover {
   background-color: var(--clr-columbia-blue);
   display: flex;
   justify-content: space-between;
-  width: 15rem;
+  width: min(90%,16rem);
+  height: 30%;
   align-items: center;
 }
 .notices {
   width: 50%;
   display: grid;
-  place-content: center;
-  margin: 1rem;
+  align-items: center;
+}
+.notices h1 {
+  text-wrap: nowrap;
+  margin:0;
+  padding:0;
+  text-align: center;
 }
 .notices-number { 
   text-align: center;
@@ -206,7 +214,6 @@ button:hover {
 }
 .container {
   padding: 0.5rem;
-  height: 74vh;
   width:min(90%,60rem);
   margin-inline:auto;
 }
@@ -265,6 +272,7 @@ td {
 /*card styles*/
 .cards-container {
   display:flex;
+  flex-direction: row;
   align-items: center;
   gap: 1rem;
   gap: 1rem;
@@ -284,8 +292,6 @@ td {
 .card h1 {
   text-align: left;
   font-size: 1rem;
-  padding-bottom: 0.5rem;
-  margin-bottom: 1.5rem;
 }
 .progress-container {
   width:min(90%,60rem);
@@ -293,6 +299,8 @@ td {
   margin-top:0.5rem;
   margin-bottom:1rem;
   padding: 0.5rem;
+  display:flex;
+  flex-wrap: wrap;
   background-color: var(--clr-white);
   border-radius: 1rem;
 }
@@ -301,6 +309,7 @@ td {
 }
 .progress-list li {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   border-top: 1px solid var(--clr-columbia-blue);
   margin-top:0.5rem;
@@ -311,15 +320,12 @@ td {
 }
 /* Media Screens */
 @media (max-width:360px){
-  .form input {
-    width: 80%;
-  }
   .leftSideMenu {
     width:100vw;
     height:100vh;
     .icon-container img {
-      width:90%;
-      height:90%;
+      width:80%;
+      height:80%;
       margin-inline:auto;
     }
   }
@@ -332,11 +338,7 @@ td {
     transform:translateX(0);
   }
   .notices-container {
-    height:min(60%,60rem);
     display: grid;
-    .card {
-      height: 10vh;
-    }
   }
   .container {
     display:grid;
@@ -346,6 +348,7 @@ td {
   }
   .cards-container {
     display: grid;
+    grid-auto-flow: column;
     place-content: center;
     width:100%;
   }
@@ -359,7 +362,56 @@ td {
     justify-content: space-between;
   }
   .cards-container {
-    display:block;
+    width:100%;
+  }
+  .card-container{
+    margin-top:0.5rem;
+    width:100%;
+  }
+  .card {
+    width:100%;
+    margin:0;
+  }
+}
+@media (max-width:384px){
+  .form input {
+    width: 80%;
+  }
+  .leftSideMenu {
+    width:100vw;
+    height:100vh;
+    .icon-container img {
+      width:60%;
+      height:60%;
+      margin-inline:auto;
+    }
+  }
+  .rightSideMenu {
+    transform:translateX(-100%);
+    width:100vw;
+    transition: all 500ms;
+  }
+  .rightSideMenuSlideIn{
+    transform:translateX(0);
+  }
+  .container {
+    display:grid;
+    gap: 1rem;
+    margin-inline:auto;
+  }
+  .cards-container {
+    place-content: center;
+    width:100%;
+  }
+  .progress-container{
+    margin-top:0;
+    gap:1rem;
+    background-color: white;
+  }
+  .progress-list li {
+    justify-content: space-between;
+  }
+  .cards-container {
     width:100%;
   }
   .card-container{
@@ -393,28 +445,14 @@ td {
     transform:translateX(0);
   }
   .notices-container {
-    height:min(50%,50rem);
     display: grid;
-    .card {
-      height: 10vh;
-    }
   }
   .container {
     display:grid;
-    height:120vh;
     gap: 1rem;
     margin-inline:auto;
   }
-  .cards-container {
-    display: grid;
-    place-content: center;
-    width:100%;
-  }
-  .progress-container{
-    display:grid;
-    gap:1rem;
-    background-color: white;
-  }
+
   .progress-list li {
     justify-content: space-between;
   }
@@ -453,15 +491,10 @@ td {
     transform:translateX(0);
   }
   .notices-container {
-    height:min(50%,50rem);
     display: grid;
-    .card {
-      height: 10vh;
-    }
   }
   .container {
     display:grid;
-    height:100vh;
     gap: 1rem;
     margin-inline:auto;
   }
